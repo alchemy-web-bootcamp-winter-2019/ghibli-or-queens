@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #FDE74C;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #DB5461;
+}
+
+strong {
+    color: #FDE74C;
+}
+
+body {
+    background-image: url('../assets/studio-ghibli-museum-tokyo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns:30% 70%;
+}
+
+li {
+    margin: 5px;
+    font-weight: bold;
+}
+
+
+

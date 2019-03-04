@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('./assets/studio-ghibli-museum-tokyo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns:30% 70%;
+}
+
+
+

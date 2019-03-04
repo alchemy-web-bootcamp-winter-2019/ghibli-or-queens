@@ -1,23 +1,16 @@
 const test = QUnit.test;
+import headerTemplate from '../src/header.js';
 
 QUnit.module('header');
 
-function loadHeader() {
-    const template = document.createElement('template');
-    template.innerHTML = `
-    <h1><a href="header">Studio Ghibli</a></h1>
-    `;
-
-    return template.content;
-}
 
 test('html template for header', assert => {
     // arrange
 
     // act
-    const result = loadHeader();
+    const result = headerTemplate();
     // assert
     assert.htmlEqual(result, `
-    <h1><a href="header">Studio Ghibli</a></h1>
+    <h1><a href="index.html">Studio Ghibli</a></h1>
     `);
 });

@@ -1,7 +1,7 @@
 export function movieListTemplate(movie) {
     const html = `
     <li>
-      <a href="${movie.url}">${movie.title}</a>
+      <a href="details.html?id=${movie.id}">${movie.title}</a>
     </li>
     `;
     const template = document.createElement('template');

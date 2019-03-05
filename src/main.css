@@ -1,0 +1,23 @@
+* {
+    background: #0e0f21;
+    color: white;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+}
+
+dt {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    grid-column-start: 1;
+    background: pink;
+    color: #0e0f21;
+}
+
+dd {
+    grid-column-start: 2;
+    padding: 20px;
+}

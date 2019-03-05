@@ -1,8 +1,6 @@
 export function makeMovieList(movie) {
     const html = `
-    <ul>
-    <li><a href="${'movie-detail.html?id=' + movie.id}">${movie.title}</a></li>
-</ul>`;
+    <li><a href="${'movie-detail.html?id=' + movie.id}">${movie.title}</a></li>`;
 
     const template = document.createElement('template');
     template.innerHTML = html;

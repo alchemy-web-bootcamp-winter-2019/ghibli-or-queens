@@ -10,9 +10,7 @@ const movie =
 
 test('make list of movies using template and interpolation', assert => {
     const expected = `
-    <ul>
-    <li><a href="movie-detail.html?id=89">Castle in the Sky</a></li>
-</ul>`;
+    <li><a href="movie-detail.html?id=89">Castle in the Sky</a></li>`;
 
     const result = makeMovieList(movie);
 

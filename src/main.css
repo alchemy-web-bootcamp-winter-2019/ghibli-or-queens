@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: white;
+    font-family: 'Knewave', cursive;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    align-self: center;
+}
+
+#movie-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 50px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    margin: 10px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}

@@ -6,7 +6,7 @@ test('render content to main UL', function(assert){
     function renderListItem(movie) {
         const template = document.createElement('template');
         const html = `<li class = "card">
-        <a href="${movie.url}">${movie.title}</a>
+        <a href="../detailview.html?id=${movie.id}">${movie.title}</a>
     </li>`;
         template.innerHTML = html;
         return template.content;
@@ -34,10 +34,9 @@ test('render content to main UL', function(assert){
         ],
         "url": "https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe"
     };
-
     //act
     const expected = `<li class="card">
-    <a href="https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe">Castle in the Sky</a>
+    <a href="../detailview.html?id=2baf70d1-42bb-4437-b551-e5fed5a87abe">Castle in the Sky</a>
  </li>`;
     
     const result = renderListItem(movieData);

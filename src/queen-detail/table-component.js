@@ -15,3 +15,10 @@ export function makeQueenTable(queen) {
     template.innerHTML = html;
     return template.content;
 }
+
+const queenTable = document.getElementById('queen-table');
+
+export default function loadQueenTable(queen) {
+    const dom = makeQueenTable(queen);
+    queenTable.appendChild(dom);
+}

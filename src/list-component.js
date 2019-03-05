@@ -9,3 +9,12 @@ export function createListItem(queen) {
     template.innerHTML = html;
     return template.content;
 }
+
+const queenList = document.getElementById('queen-list');
+
+export default function loadQueens(queens) {
+    queens.forEach(queen => {
+        const dom = createListItem(queen);
+        queenList.appendChild(dom);
+    });
+}

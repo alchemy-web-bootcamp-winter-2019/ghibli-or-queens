@@ -24,3 +24,10 @@ export function movieDetailsTemplate(movie) {
     const dom = template.content;
     return dom;
 }
+
+const detailTable = document.getElementById('detail-table');
+
+export default function loadMovieDetails(movie) {
+    const dom = movieDetailsTemplate(movie);
+    detailTable.appendChild(dom);
+}

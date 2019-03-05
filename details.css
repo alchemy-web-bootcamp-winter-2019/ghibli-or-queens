@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-flow: column;
+    background: pink;
+}
+
+#header {
+    display: flex;
+    flex-flow: column;
+    
+}
+
+header img {
+    width: 20vw;
+}
+
+main {
+    font-size: 1.5em;
+}
+
+span {
+    display: flex;
+}

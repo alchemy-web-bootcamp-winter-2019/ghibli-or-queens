@@ -1,25 +1,5 @@
+import { makeQueenDetail } from '../src/detail-component.js';
 const test = QUnit.test;
-
-function makeQueenDetail(queen) {
-    const html = /*html*/
-    `
-    <dl>
-    <dt>Name:</dt>
-    <dd>Victoria 'Porkchop' Parker</dd>
-    <dt>Winner:</dt>
-    <dd>No</dd>
-    <dt>Quote:</dt>
-    <dd>Would you fuck me? I'd fuck me.</dd>
-    <dt>Season:</dt>
-    <dd>1</dd>
-    <dt>Picture</dt>
-    <dd><img src="http://www.nokeynoshade.party/images/victoria-porkchop-parker.jpg"></dd>
-    </dl>`;
-
-    const template = document.createElement('template');
-    template.innerHTML = html;
-    return template.content;
-}
 
 test('make detail page html', assert => {
     //arrange
@@ -35,8 +15,8 @@ test('make detail page html', assert => {
     <dd>No</dd>
     <dt>Quote:</dt>
     <dd>Would you fuck me? I'd fuck me.</dd>
-    <dt>Season:</dt>
-    <dd>1</dd>
+    <dt>First Appearance:</dt>
+    <dd>Season 1</dd>
     <dt>Picture</dt>
     <dd><img src="http://www.nokeynoshade.party/images/victoria-porkchop-parker.jpg"></dd>
     </dl>`;

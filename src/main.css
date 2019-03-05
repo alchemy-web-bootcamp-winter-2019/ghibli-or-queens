@@ -6,6 +6,7 @@ header {
 body {
     background-color: #4D9DE0;
     border: 5px solid #E1BC29;
+    width: 80%;
 }
 
 a {
@@ -19,4 +20,12 @@ li {
 
 li:hover {
     background-color: #E15554;
+}
+
+table {
+    background: coral;
+}
+
+th, td {
+    padding: 5px;
 }

@@ -1,12 +1,12 @@
-export function makeMovieTable(queen) {
+export function makeMovieTable(movie) {
     const html = `
     <dl>
-    <dt>Name:</dt>
-    <dd>${queen.name}</dd>
-    <dt>Seasons:</dt>
-    <dd>${queen.seasons}</dd>
-    <dt>Quote:</dt>
-    <dd>"${queen.quote}"</dd>
+    <dt>Title:</dt>
+    <dd>${movie.title}</dd>
+    <dt>Director:</dt>
+    <dd>${movie.director}</dd>
+    <dt>Description:</dt>
+    <dd>"${movie.description}"</dd>
 </dl>`;
 
     const template = document.createElement('template');

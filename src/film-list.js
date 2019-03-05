@@ -15,7 +15,6 @@ fetch(URL)
     .then(response => response.json())
     .then(results => {
         loadFilms(results);
-        console.log(results);
     });
 
 export function loadFilms(films) {

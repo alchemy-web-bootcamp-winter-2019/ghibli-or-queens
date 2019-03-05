@@ -11,7 +11,7 @@ const queen =
 test('make list of queens using template and interpolation', assert => {
     const expected = `
     <ul>
-    <li><a href="">Trixie Mattel</a></li>
+    <li><a href="queen-detail.html?id=89">Trixie Mattel</a></li>
 </ul>`;
 
     const result = makeQueenList(queen);

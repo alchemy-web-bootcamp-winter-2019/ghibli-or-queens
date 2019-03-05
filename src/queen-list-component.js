@@ -1,7 +1,7 @@
 export function makeQueenList(queen) {
     const html = `
     <ul>
-    <li><a href="">${queen.name}</a></li>
+    <li><a href="${'queen-detail.html?id=' + queen.id}">${queen.name}</a></li>
 </ul>`;
 
     const template = document.createElement('template');

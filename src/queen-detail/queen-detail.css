@@ -28,25 +28,13 @@ h1 {
     margin-left: 20px;
 }
 
-ul {
+dt {
     display: flex;
-    flex-flow: wrap;
-    justify-content: space-around;
-    padding: 0;
+    background-color: #eb5db7;
+    color: white;
 }
 
-ul li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 200px;
-    min-width: 100px;
-    flex-grow: 1;
-    border: 2px solid black;
-    margin-left: 5px;
-    margin-bottom: 10px;
-}
-
-li img {
-    width: 100%;
+dd {
+    background-color: black;
+    color: #eb5db7;
 }

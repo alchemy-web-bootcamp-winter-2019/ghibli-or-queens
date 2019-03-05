@@ -1,6 +1,6 @@
 import loadDetail from './detail-component.js';
 
-const URL = 'http://www.nokeynoshade.party/api/queens/all';
+const URL = 'http://www.nokeynoshade.party/api/queens/';
 
 const searchParams = new URLSearchParams(window.location.search);
 
@@ -16,5 +16,5 @@ fetch(URL + id)
         loadDetail(queen);
     })
     .catch(err => {
-        console.error('fetch error', err)
+        console.error('fetch error', err);
     });

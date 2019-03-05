@@ -27,15 +27,25 @@ a {
     margin-right: 50px;
 }
 
-ul {
-    margin-left: 100px;
+dl {
+    border: 3px double #ccc;
+    margin: 0 5em 2em 5em;
+    padding: 1em 2em 1em 0;
 }
 
-li {
-    margin-bottom: 5px;
+dt {
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
 }
 
-li a {
-    color: olivedrab;
-    text-decoration: none;
+dt::after {
+    content: ":";
+}
+
+dd {
+    margin: 0 0 0 110px;
+    padding: 0 0 .75em 0;
+    text-align: justify;
 }

@@ -1,0 +1,13 @@
+dl {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    display: flex;
+}
+
+dt {
+    flex-basis: 10%;
+    background: steelblue;
+}

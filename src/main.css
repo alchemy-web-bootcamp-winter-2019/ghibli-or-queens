@@ -1,0 +1,35 @@
+header {
+    background-color: #3BB273;
+    padding: 20px;
+}
+
+body {
+    background-color: #4D9DE0;
+    border: 5px solid #E1BC29;
+    width: 80%;
+}
+
+a {
+    color: black;
+}
+
+li {
+    padding: 3px;
+    font-weight: bold;
+}
+
+li:hover {
+    background-color: #E15554;
+}
+
+table {
+    background: coral;
+}
+
+th, td {
+    padding: 5px;
+}
+
+th {
+    text-align: right;
+}

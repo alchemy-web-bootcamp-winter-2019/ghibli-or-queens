@@ -16,7 +16,7 @@ test('make template literal for movie description html', function(assert){
     };
     //act
     const result = renderHtmlMovieInfo(movieName);
-    const expected = /*html*/`<section>
+    const expected = /*html*/`<dl>
         <dt>Title:</dt>
         <dd>Castle in the Sky</dd>
         <dt class="info">Description:</dt>
@@ -29,7 +29,7 @@ test('make template literal for movie description html', function(assert){
         <dd>1986</dd>
         <dt class="info">RT Score:</dt>
         <dd>95</dd>
-        </section>`;
+        </dl>`;
     //assert
     assert.htmlEqual(result, expected);
 });

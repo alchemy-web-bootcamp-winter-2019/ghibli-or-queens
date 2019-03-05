@@ -1,5 +1,5 @@
 export default function renderHtmlMovieInfo(movieName){
-    const html = /*html*/ `<section>
+    const html = /*html*/ `<dl>
         <dt>Title:</dt>
         <dd>${movieName.title}</dd>
         <dt class="info">Description:</dt>
@@ -12,11 +12,18 @@ export default function renderHtmlMovieInfo(movieName){
         <dd>${movieName.release_date}</dd>
         <dt class="info">RT Score:</dt>
         <dd>${movieName.rt_score}</dd>
-        </section>`;
+        </dl>`;
 
     const template = document.createElement('template');
     template.innerHTML = html;
 
     return template.content;
+}
+
+
+export function loadMovieDescription(movieNode){
+    const filmDescription = document.getElementById('film-description');
+    const dom = renderHtmlMovieInfo(movieNode);
+    filmDescription.appendChild(dom);
 }
 

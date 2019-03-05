@@ -16,3 +16,4 @@ export function loadMovieList(movieArray){
         movieList.appendChild(displayMovie);
     });
 }
+

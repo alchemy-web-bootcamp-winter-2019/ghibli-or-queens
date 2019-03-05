@@ -1,0 +1,54 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(139, 124, 228);
+}
+
+header img {
+    margin: 10px;
+}
+
+header h1 {
+    flex-grow: 1;
+    align-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+}
+
+header a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+}
+
+li {
+    list-style-type: square;
+}
+
+table {
+    border-collapse: collapse; 
+    border-spacing: 15px;
+}
+
+tr {
+    border: none;
+}
+
+th {
+    vertical-align: top;
+    text-align: left;
+    height: 25px;
+    width: 150px;
+}
+
+
+td { 
+    border-left: solid 5px rgb(139, 124, 228);
+    width: 500px;
+    vertical-align: top;
+    height: auto;
+    margin: 5px;
+}
+
+#description {
+    height: 200px;
+}

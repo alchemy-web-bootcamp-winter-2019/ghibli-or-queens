@@ -7,7 +7,7 @@ export function createDetail(movie) {
     </span>
 
     <span>
-        <dt>Year Released</dt>
+        <dt>Year Released:</dt>
         <dd>${movie.release_date}</dd>
     </span>
     </dl>

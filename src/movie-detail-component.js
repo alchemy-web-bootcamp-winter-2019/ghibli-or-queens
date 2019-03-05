@@ -16,8 +16,6 @@ export function makeMovieTable(movie) {
 
 }
 
-const searchParams = new URLSearchParams(window.location.search);
-const movieID = searchParams.get('id');
 const movieTableNode = document.getElementById('movie-table');
 export default function loadMovieTable(movie) {
     const movieTable = makeMovieTable(movie);

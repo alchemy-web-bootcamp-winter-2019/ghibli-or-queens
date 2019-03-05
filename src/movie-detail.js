@@ -1,14 +1,16 @@
-// import loadMovieTable from './movie-detail-component.js/index.js';
-// import loadMovieList from './movie-list-component.js';
+import loadMovieTable from './movie-detail-component.js';
 
-// const queen = 
-//     {
-//         id: 89,
-//         name: 'Trixie Mattel',
-//         seasons: 3,
-//         quote: 'I love pickles'
-//     };
+const searchParams = new URLSearchParams(window.location.search);
+const movieID = searchParams.get('id');
+console.log(movieID);
 
+const URL = `https://ghibliapi.herokuapp.com/films/${movieID}`;
 
-
-// loadQueenList(queen);
+fetch(URL)
+    .then(response => response.json())
+    .then(movie => {
+        loadMovieTable(movie);
+    })
+    .catch(err => {
+        console.log(err.message);
+    });

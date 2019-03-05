@@ -29,8 +29,7 @@ test('render content to main UL', function(assert){
         "url": "https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe"
     };
     //act
-    const expected = `<li class="card">
-    <a href="../detailview.html?id=2baf70d1-42bb-4437-b551-e5fed5a87abe">Castle in the Sky</a></li>`;
+    const expected = `<li class="card"><a href="../detailview.html?id=2baf70d1-42bb-4437-b551-e5fed5a87abe">Castle in the Sky</a></li>`;
     
     const result = renderListItem(movieData);
     //assert

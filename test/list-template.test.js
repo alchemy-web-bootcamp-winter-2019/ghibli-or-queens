@@ -1,3 +1,4 @@
+import { createList } from '../src/createList.js';
 const test = QUnit.test;
 
 const movie = {
@@ -6,20 +7,6 @@ const movie = {
     release_date: 1986
 };
 
-function createList(movie) {
-    const html = `
-    <span>
-        <li>
-        <a href=${movie.url}>${movie.title} (${movie.release_date})</a>
-        </li>
-    </span>
-    `;
-
-    const template = document.createElement('template');
-    template.innerHTML = html;
-    const dom = template.content;
-    return dom;
-}
 
 test('generate list dynamically', assert => {
     //arrange

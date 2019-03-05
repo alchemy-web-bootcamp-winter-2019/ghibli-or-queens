@@ -5,8 +5,14 @@ export function makeMovieTable(movie) {
     <dd>${movie.title}</dd>
     <dt>Director:</dt>
     <dd>${movie.director}</dd>
+    <dt>Producer:</dt>
+    <dd>${movie.producer}</dd>
     <dt>Description:</dt>
-    <dd>"${movie.description}"</dd>
+    <dd>${movie.description}</dd>
+    <dt>Release Date:</dt>
+    <dd>${movie.release_date}</dd>
+    <dt>Rotten Tomatoes Score</dt>
+    <dd>${movie.rt_score}</dd>
 </dl>`;
 
     const template = document.createElement('template');

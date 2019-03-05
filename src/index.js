@@ -10,6 +10,6 @@ fetch(URL)
         loadMovieList(movies);
     })
     .catch(err => {
-        console.log(err.message);
+        alert(err.message);
     });
 

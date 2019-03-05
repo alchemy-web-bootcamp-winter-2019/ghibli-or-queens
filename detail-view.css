@@ -1,0 +1,51 @@
+* {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 50px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    flex-grow: 1;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+img {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+a {
+    margin-right: 50px;
+}
+
+dl {
+    border: 3px double #ccc;
+    margin: 0 5em 2em 5em;
+    padding: 1em 2em 1em 0;
+}
+
+dt {
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+}
+
+dt::after {
+    content: ":";
+}
+
+dd {
+    margin: 0 0 0 110px;
+    padding: 0 0 .75em 0;
+    text-align: justify;
+}

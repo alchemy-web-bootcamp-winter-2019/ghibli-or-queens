@@ -1,0 +1,41 @@
+* {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 50px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    flex-grow: 1;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+img {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+a {
+    margin-right: 50px;
+}
+
+ul {
+    margin-left: 100px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+li a {
+    color: olivedrab;
+    text-decoration: none;
+}

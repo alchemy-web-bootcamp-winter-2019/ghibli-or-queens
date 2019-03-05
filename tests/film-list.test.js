@@ -14,7 +14,7 @@ test('html for one film', assert => {
     // assert
     assert.htmlEqual(result, `
     <li>
-        <a href="./film-detail.html?id=12345">Castle in the sky</a> <strong>(1986)</strong>
+        <a href="./film-detail.html?id=12345">Castle in the sky</a> <span>(1986)</span>
     </li>
     `);
 });

@@ -1,4 +1,4 @@
-import { makeQueenDetails } from '../src/queen-details-component.js';
+import { makeQueenDetails } from '../src/details-table-component.js/index.js';
 const test = QUnit.test;
 
 QUnit.module('Creating details table');

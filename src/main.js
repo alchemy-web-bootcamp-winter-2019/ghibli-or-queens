@@ -1,7 +1,7 @@
 import { loadQueens } from "./queen-list.js";
 import { loadQueenDetail } from "./queen-detail.js";
 
-const url = 'http://www.nokeynoshade.party/api/queens/all';
+const url = 'https://www.nokeynoshade.party/api/queens/all';
 
 fetch(url)
     .then(response => response.json())
@@ -11,7 +11,7 @@ fetch(url)
 
 const searchParams = new URLSearchParams(window.location.search);
 const id = searchParams.get('id');
-const urlId = `http://www.nokeynoshade.party/api/queens/${id}`;
+const urlId = `https://www.nokeynoshade.party/api/queens/${id}`;
 
 fetch(urlId)
     .then(response => response.json())

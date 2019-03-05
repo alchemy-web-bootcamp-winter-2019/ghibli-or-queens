@@ -2,7 +2,7 @@ const test = QUnit.test;
 
 QUnit.module('Make Detail HTML');
 
-import { makeDetailHtml } from '../src/details-components';
+import { makeDetailHtml } from '../src/details-components.js';
 
 test('returns movie detail html dynamically', function(assert) {
     const movieObject = {

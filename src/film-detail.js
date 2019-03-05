@@ -31,7 +31,7 @@ export default function filmDetailTable(film) {
     return template.content;
 }
 
-const filmDetail = document.getElementById('film-detail-container');
+const filmDetail = document.getElementById('film-detail-table');
 
 export function loadFilmDetail(film) {
     const dom = filmDetailTable(film);

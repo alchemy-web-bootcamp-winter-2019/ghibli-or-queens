@@ -1,16 +1,10 @@
+import renderListItem from '../src/renderlistitem.js';
 const test = QUnit.test;
 QUnit.module('main ul item rendering');
 
 test('render content to main UL', function(assert){
     //arrange
-    function renderListItem(movie) {
-        const template = document.createElement('template');
-        const html = `<li class = "card">
-        <a href="../detailview.html?id=${movie.id}">${movie.title}</a>
-    </li>`;
-        template.innerHTML = html;
-        return template.content;
-    }
+    
     
     const movieData = {
         "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
@@ -36,8 +30,7 @@ test('render content to main UL', function(assert){
     };
     //act
     const expected = `<li class="card">
-    <a href="../detailview.html?id=2baf70d1-42bb-4437-b551-e5fed5a87abe">Castle in the Sky</a>
- </li>`;
+    <a href="../detailview.html?id=2baf70d1-42bb-4437-b551-e5fed5a87abe">Castle in the Sky</a></li>`;
     
     const result = renderListItem(movieData);
     //assert

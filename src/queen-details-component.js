@@ -17,7 +17,8 @@ export function makeQueenDetails(queen) {
 }
 
 
-
 export default function loadQueenDetails(queen) {
-   
+   const queenDetailsNode = document.getElementById('queen-details');
+   const queenDetails = makeQueenDetails(queen);
+   queenDetailsNode.appendChild(queenDetails);
 }

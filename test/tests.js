@@ -1,3 +1,3 @@
 import './html-equal.js';
-import './make-queen-list.test.js';
-import './make-queen-table.test.js';
+import './make-movie-list.test.js';
+// import './make-movie-table.test.js';

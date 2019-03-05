@@ -1,4 +1,4 @@
-export function makeQueenTable(queen) {
+export function makeMovieTable(queen) {
     const html = `
     <dl>
     <dt>Name:</dt>
@@ -17,9 +17,9 @@ export function makeQueenTable(queen) {
 }
 
 const searchParams = new URLSearchParams(window.location.search);
-const queenID = searchParams.get('id');
-const queenTableNode = document.getElementById('queen-table');
-export default function loadQueenTable(queen) {
-    const queenTable = makeQueenTable(queen);
-    queenTableNode.appendChild(queenTable);
+const movieID = searchParams.get('id');
+const movieTableNode = document.getElementById('movie-table');
+export default function loadMovieTable(movie) {
+    const movieTable = makeMovieTable(movie);
+    movieTableNode.appendChild(movieTable);
 }

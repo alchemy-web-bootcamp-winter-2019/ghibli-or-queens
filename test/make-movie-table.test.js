@@ -1,4 +1,4 @@
-import { makeQueenTable } from '../src/queen-detail-component.js';
+import { makeQueenTable } from '../src/movie-detail-component.js/index.js';
 const test = QUnit.test;
 
 const queen = 
@@ -12,7 +12,7 @@ const queen =
 test('make queen detail table from template', assert => {
     const expected = `
     <dl>
-    <dt>Name:</dt>
+    <dt>Title:</dt>
     <dd>Trixie Mattel</dd>
     <dt>Seasons:</dt>
     <dd>3</dd>

@@ -1,3 +1,9 @@
-import loadMovieListTemplate from "./makeMovieListTemplate";
+import loadMovieListTemplate from './makeMovieListTemplate.js';
 
-loadMovieListTemplate();
+const apiURL = 'https://ghibliapi.herokuapp.com/films';
+
+fetch(apiURL)
+    .then(response => response.json())
+    .then(result => {
+        loadMovieListTemplate(result);
+    });

@@ -13,8 +13,9 @@ const searchParams = new URLSearchParams(window.location.search);
 const id = searchParams.get('id');
 const urlId = `https://ghibliapi.herokuapp.com/films/${id}`;
 
+
 fetch(urlId)
     .then(response => response.json())
     .then(results => {
         loadFilmDetails(results);
-    });
+    });   

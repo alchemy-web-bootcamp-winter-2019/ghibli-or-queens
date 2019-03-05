@@ -1,0 +1,11 @@
+header {
+    background: lightcoral;
+    color: aqua;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+ #all-queens {
+     align-self: flex-end;
+ }
+

@@ -18,3 +18,7 @@ export function createDetail(movie) {
     const dom = template.content;
     return dom;
 }
+
+export default function loadDetail(detailList) {
+    
+}

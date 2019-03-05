@@ -1,14 +1,9 @@
 import loadList from './createList.js';
 
-const movieList = [
-    { title: 'Castle in the Sky',
-        url: "google.com",
-        release_date: 1986 },
+const url = 'https://ghibliapi.herokuapp.com/films';
 
-    { title: 'Castle in the Sky',
-        url: "google.com",
-        release_date: 1986 }
-
-];
-
-loadList(movieList);
+fetch(url)
+    .then(response => response.json())
+    .then(movieList =>{
+        loadList(movieList);
+    });

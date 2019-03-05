@@ -2,7 +2,8 @@ export function filmTemplate(film) {
     const template = document.createElement('template');
     template.innerHTML = `
     <li>
-        <a href="./film-detail.html?id=${film.id}">${film.title}</a> <strong>(${film.release_date})</strong>
+        <a href="./film-detail.html?id=${film.id}">${film.title}</a> 
+        <span>(${film.release_date})</span>
     </li>
     `;
     return template.content;

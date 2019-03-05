@@ -1,14 +1,6 @@
+import { makeListTemplate } from '../src/list-component.js';
 const test = QUnit.test;
 
-function makeListTemplate(queen) {
-    const html = /*html*/
-    `<li><a href="queen-detail.html?id=1">Victoria 'Porkchop' Parker</a><img src="http://www.nokeynoshade.party/images/victoria-porkchop-parker.jpg"></li>`;
-
-    const template = document.createElement('template');
-    template.innerHTML = html;
-    return template.content;
-
-}
 test('make list dynamically', assert => {
     //arrange
     const queen = {

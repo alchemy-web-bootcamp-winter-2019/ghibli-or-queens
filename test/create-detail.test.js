@@ -1,36 +1,31 @@
+import { createDetail } from '../src/createDetail.js';
 const test = QUnit.test;
 
-export function createDetail() {
-    return `
-    <span>
-        <dt>Title:</dt>          
-        <dd>Castle In The Sky</dd>
-    </span>
+const movie = {
+    title: 'Castle in the Sky',
+    release_date: 1986 
+};
 
-    <span>
-        <dt>Year Released</dt>
-        <dd>1986</dd>
-    </span>
-    `;
-}
 
 test('create detail page dynamically', assert => {
 //arrange
     const expected = `
+    <dl>
     <span>
         <dt>Title:</dt>          
-        <dd>Castle In The Sky</dd>
+        <dd>Castle in the Sky</dd>
     </span>
 
     <span>
         <dt>Year Released</dt>
         <dd>1986</dd>
     </span>
+    </dl>
     `;
 
 //act
-    const result = createDetail();
+    const result = createDetail(movie);
 
 //assert
-assert.equal(result, expected);
+    assert.htmlEqual(result, expected);
 });

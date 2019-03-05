@@ -7,8 +7,8 @@ if(!id) {
     window.location = './';
 }
 
-const URL = `https://ghibliapi.herokuapp.com/films/${id}`;
+const URL = `http://www.nokeynoshade.party/api/queens/${id}`;
 
-// fetch(URL)
-    // .then(response => response.json())
-    // .then(result => loadQueenTable(result));
+fetch(URL)
+    .then(response => response.json())
+    .then(result => loadQueenTable(result));

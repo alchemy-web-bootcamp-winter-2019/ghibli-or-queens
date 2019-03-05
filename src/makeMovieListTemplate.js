@@ -9,3 +9,12 @@ export function makeMovieListTemplate(movie) {
     const dom = template.content;
     return dom;
 }
+
+const movieListContainer = document.getElementById('movie-list-container');
+
+export default function loadMovieListTemplate(movieListApi) {
+    movieListApi.forEach(movie => {
+        const dom = makeMovieListTemplate(movie);
+        movieListContainer.appendChild(dom);
+    });
+}

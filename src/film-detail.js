@@ -5,7 +5,6 @@ const id = searchParams.get('id');
 
 if(!id){
     window.location = '/';
-    console.log('nope');
 }
 
 const URL = `https://ghibliapi.herokuapp.com/films/${id}`;

@@ -11,7 +11,7 @@ export function makeQueenDetail(queen) {
     <dt>First Appearance:</dt>
     <dd>Season ${queen.seasons[0].seasonNumber}</dd>
     <dt>Picture</dt>
-    <dd><img src="http://www.nokeynoshade.party/images/victoria-porkchop-parker.jpg"></dd>
+    <dd><img src="${queen.image_url}"></dd>
     </dl>`;
 
     const template = document.createElement('template');

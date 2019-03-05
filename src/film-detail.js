@@ -30,3 +30,10 @@ export default function filmDetailTable(film) {
     `;
     return template.content;
 }
+
+const filmDetail = document.getElementById('film-detail-container');
+
+export function loadFilmDetail(film) {
+    const dom = filmDetailTable(film);
+    filmDetail.appendChild(dom);
+}

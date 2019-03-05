@@ -1,4 +1,5 @@
 import loadFilms from './load-films.js';
+import { loadFilmDetail } from './film-detail.js';
 
 
 const films = [

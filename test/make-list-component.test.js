@@ -1,13 +1,6 @@
+import { makeListItem } from '../src/make-list-component.js';
+
 const test = QUnit.test;
-const template = document.createElement('template');
-
-
-function makeListItem(filmObject) {
-    const html = `<li>${filmObject.title}</li>`;
-    template.innerHTML = html;
-    return template.content;
-}
-
 
 test('test make-list-component.test.js', assert => {
 

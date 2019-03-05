@@ -51,6 +51,7 @@ li span {
 li a {
     width: 240px;
     text-align: right;
+    margin-right: 8px;
 }
 
 

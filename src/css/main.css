@@ -1,0 +1,44 @@
+html {
+    background: url('../../assets/ghibli-background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+ul {
+    padding: 0px;
+}
+
+main {
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    color: white;
+}
+
+#header-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+h1 {
+    font-family: 'Nanum Gothic', bold, sans-serif;
+    font-size: 40px;
+    margin: 0px;
+    margin-left: 8px;
+}
+
+img {
+    width: 300px;
+}

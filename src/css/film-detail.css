@@ -1,0 +1,63 @@
+dl {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: visible;
+}
+
+dt {
+    flex: 0 0 20%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background: rgb(37, 159, 230);
+    color: white;
+    text-align: right;
+    padding: 5px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+dd {
+    flex: 0 0 75%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 5px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+#header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+h1 {
+    font-family: 'Nanum Gothic', bold, sans-serif;
+    font-size: 40px;
+    margin: 0px;
+    flex-grow: 1;
+    margin-left: 8px;
+}
+
+img {
+    width: 300px;
+}
+
+#all-films-link {
+    border: 1px solid black;
+    padding: 4px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Inconsolata', monospace;
+}
+
+#all-films-link:hover {
+    background-color: rgb(224, 223, 223);
+}
+
+main {
+    font-family: 'Inconsolata', monospace; 
+}

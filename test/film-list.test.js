@@ -1,20 +1,8 @@
+import { filmListTemplate } from '../src/load-films.js';
+
 const test = QUnit.test;
 
 QUnit.module('film list template');
-
-function filmListTemplate(film) {
-    const template = document.createElement('template');
-
-    template.innerHTML = `
-        <li>
-            <a href="./film-detail.html?id=${film.id}">${film.title}</a>
-            (${film.release_date})
-        </li>
-    `;
-
-    return template.content;
-}
-
 
 const film = {
     'id': '2baf70d1-42bb-4437-b551-e5fed5a87abe',

@@ -18,3 +18,10 @@ export function makeQueenDetail(queen) {
     template.innerHTML = html;
     return template.content;
 }
+
+const detail = document.getElementById('detail');
+
+export default function loadDetail(queen) {
+    const dom = makeQueenDetail(queen);
+    detail.appendChild(dom);
+}

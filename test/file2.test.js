@@ -16,32 +16,32 @@ test('returns movie detail html dynamically', function(assert) {
     };
 
     const result = makeDetailHtml(movieObject);
-        const expected = /*html*/ `     
-        <tbody>
-            <tr>
-                <th>Title: </th><td>Castle in the Sky</td>
-            </tr>
-            <tr>
-                <th>Description:</th>
-                <td id="description">The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.</td>
-            </tr>
-            <tr>
-                <th>Director:</th>
-                <td>Hayao Miyazaki</td>
-            </tr>
-            <tr>
-                <th>Producer:</th>
-                <td>Isao Takahata</td>
-            </tr>
-            <tr>
-                <th>Release Date:</th>
-                <td>1986</td>
-            </tr>
-            <tr>
-                <th>Rotten Tomato:</th>
-                <td>95</td>
-            </tr> 
-        </tbody>`;
+    const expected = /*html*/ `     
+    <tbody>
+        <tr>
+            <th>Title: </th><td>Castle in the Sky</td>
+        </tr>
+        <tr>
+            <th>Description:</th>
+            <td id="description">The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.</td>
+        </tr>
+        <tr>
+            <th>Director:</th>
+            <td>Hayao Miyazaki</td>
+        </tr>
+        <tr>
+            <th>Producer:</th>
+            <td>Isao Takahata</td>
+        </tr>
+        <tr>
+            <th>Release Date:</th>
+            <td>1986</td>
+        </tr>
+        <tr>
+            <th>Rotten Tomato:</th>
+            <td>95</td>
+        </tr> 
+    </tbody>`;
     
     
     assert.htmlEqual(result, expected);

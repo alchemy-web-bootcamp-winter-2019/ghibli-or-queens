@@ -35,3 +35,32 @@ header {
 li {
     margin-top: 5px;
 }
+
+#film-detail {
+    margin: 5% 20% 0 20%;
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+    opacity: 0.8;
+}
+
+#film-detail:hover {
+    opacity: 1;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 1 1;
+}
+
+dt {
+    grid-column-start: 1;
+}
+
+dd {
+    grid-column-start: 2;
+}
+
+dt, dd {
+    padding: 2px;
+}

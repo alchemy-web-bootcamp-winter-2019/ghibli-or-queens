@@ -1,4 +1,4 @@
-import movieListTemplate from '../src/movie-list-template.js';
+import { movieListTemplate } from '../src/movie-list-template.js';
 const test = QUnit.test;
 
 const movie = {
@@ -18,6 +18,6 @@ test('display list of movies', assert => {
   //act
     const result = movieListTemplate(movie);
   //assert
-    assert.equal(result, expected);
+    assert.htmlEqual(result, expected);
 
 });

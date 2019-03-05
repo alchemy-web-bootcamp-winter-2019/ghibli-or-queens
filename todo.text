@@ -1,0 +1,4 @@
+1. loadQueenDetail - function for appending queen details to container
+2. loadQeens - function for appending each queen to queen list page
+3. index.js - bring in API, fetch 
+4. get id from URL

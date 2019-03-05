@@ -13,3 +13,11 @@ export default function makeListTemplate(queen){
     return template.content;
 }
 
+const queensList = document.getElementById('queens-list');
+
+export function loadQueens(queens) {
+    queens.forEach(queen => {
+        const dom = makeListTemplate(queen);
+        queensList.appendChild(dom);
+    });
+}

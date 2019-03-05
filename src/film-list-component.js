@@ -7,3 +7,12 @@ export default function renderHtmlMovieList(movieName){
     template.innerHTML = html;
     return template.content;
 }
+
+const movieList = document.getElementById('movie-list');
+
+export function loadMovieList(movieArray){
+    movieArray.forEach(oneMovie => {
+        const displayMovie = renderHtmlMovieList(oneMovie);
+        movieList.appendChild(displayMovie);
+    });
+}

@@ -17,7 +17,7 @@ test('create detail page dynamically', assert => {
     </span>
 
     <span>
-        <dt>Year Released</dt>
+        <dt>Year Released:</dt>
         <dd>1986</dd>
     </span>
     </dl>

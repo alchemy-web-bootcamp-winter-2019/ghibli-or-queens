@@ -3,7 +3,7 @@ const test = QUnit.test;
 
 const movie = {
     title: 'Castle in the Sky',
-    url: "google.com",
+    id: '2baf70d1-42bb-4437-b551-e5fed5a87abe',
     release_date: 1986
 };
 
@@ -13,7 +13,7 @@ test('generate list dynamically', assert => {
     const expected = `
     <span>
         <li>
-            <a href="google.com">Castle in the Sky (1986)</a>
+            <a href="../details.html?id=2baf70d1-42bb-4437-b551-e5fed5a87abe">Castle in the Sky (1986)</a>
         </li>
     </span>
     `;

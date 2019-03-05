@@ -3,17 +3,30 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background: navy;
+    text-align: center;
+}
 
+h1 {
+    color: goldenrod;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
 ul {
     display: flex;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
+    width: 840px;
 }
 
 li {
     list-style: none;
     background: gray;
     width: 120px;
-    border: 2px solid black;
+    border: 1px solid black;
     padding: 10px;
     transition: background .1s linear;
 }
@@ -27,11 +40,6 @@ li a {
 li img {
     width: 100%;
 }
-
-li h2 {
-    text-align: center;
-}
-
 
 li:hover {
     background: darkgray;

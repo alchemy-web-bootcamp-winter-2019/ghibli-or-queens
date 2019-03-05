@@ -26,3 +26,10 @@ export default function makeDetailTemplate(queen) {
 
     return template.content;
 }
+
+const queenDetail = document.getElementById('queen-detail-container');
+
+export function loadQueenDetail(queen) {
+    const dom = makeDetailTemplate(queen);
+    queenDetail.appendChild(dom);
+}

@@ -1,4 +1,5 @@
 import { loadQueens } from "./queen-list.js";
+import { loadQueenDetail } from "./queen-detail.js";
 
 const url = 'http://www.nokeynoshade.party/api/queens/all';
 
@@ -9,3 +10,11 @@ fetch(url)
     });
 
 const searchParams = new URLSearchParams(window.location.search);
+const id = searchParams.get('id');
+const urlId = `http://www.nokeynoshade.party/api/queens/${id}`;
+
+fetch(urlId)
+    .then(response => response.json())
+    .then(results => {
+        loadQueenDetail(results);
+    });

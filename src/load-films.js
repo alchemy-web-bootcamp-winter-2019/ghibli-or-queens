@@ -9,4 +9,13 @@ export function filmListTemplate(film) {
     `;
 
     return template.content;
-};
+}
+
+const filmList = document.getElementById('film-list');
+
+export default function loadFilms(films) {
+    films.forEach(film => {
+        const dom = filmListTemplate(film);
+        filmList.appendChild(dom);
+    });
+}

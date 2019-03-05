@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 35px;
+    color: white;
+    background: linear-gradient(rgb(143, 255, 175) 0%, rgb(0, 229, 255) 100%);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    align-self: center;
+}
+
+#movie-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 50px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, hotpink, rgb(104, 217, 255));
+    background-attachment: fixed;
+    color: white;
+    margin: 10px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#movie-table {
+    display: flex;
+    align-items: center;
+}
+
+dl {
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid hotpink;
+    padding: 25px;
+    width: 90%;
+}
+
+dt {
+    flex-basis: 20%;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: right;
+}
+
+dd {
+    flex-basis: 70%;
+    flex-grow: 1;
+}
+
+footer {
+    align-self: center;
+    margin-top: 15px;
+}

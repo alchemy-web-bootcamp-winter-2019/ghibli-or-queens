@@ -13,11 +13,11 @@ test('does the hardcoded html match the dynamically generated html', assert => {
         image_url: 'https://pbs.twimg.com/profile_images/969470926235492352/afGetjal_400x400.jpg',
         seasons: [
             {
-               "id": 8,
-               "place": 6
-             },
-            ]
-    }
+                'id': 8,
+                'place': 6
+            },
+        ]
+    };
 
     //act
     const results = makeListTemplate(queen);
@@ -32,4 +32,4 @@ test('does the hardcoded html match the dynamically generated html', assert => {
         </a>
         `); 
         
-})
+});

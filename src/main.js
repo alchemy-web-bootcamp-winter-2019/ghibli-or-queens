@@ -1,5 +1,5 @@
-import { loadQueens } from "./queen-list.js";
-import { loadQueenDetail } from "./queen-detail.js";
+import { loadQueens } from './queen-list.js';
+import { loadQueenDetail } from './queen-detail.js';
 
 const url = 'https://www.nokeynoshade.party/api/queens/all';
 

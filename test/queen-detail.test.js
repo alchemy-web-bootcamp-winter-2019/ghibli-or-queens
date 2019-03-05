@@ -13,11 +13,11 @@ test('does the hardcoded html match the dynamically created html for the queen d
         image_url: 'https://pbs.twimg.com/profile_images/969470926235492352/afGetjal_400x400.jpg',
         seasons: [
             {
-               "id": 7,
-               "place": 6
-             },
-            ]
-    }
+                'id': 7,
+                'place': 6
+            },
+        ]
+    };
 
     //act
     const results = makeDetailTemplate(queen);
@@ -45,6 +45,6 @@ test('does the hardcoded html match the dynamically created html for the queen d
         </table>
     </div>
     `);
-})
+});
         
         

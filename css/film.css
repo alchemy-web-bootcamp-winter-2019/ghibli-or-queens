@@ -33,14 +33,13 @@ table {
 
 th {
     background-color: #FDE74C;
+    vertical-align: top;
     text-align: right;
+    padding: 5px;
     width: 100px;
-}
-
-th p {
-    margin-right: 10px;
 }
 
 td {
     background-color: #E3655B;
+    padding: 5px;
 }

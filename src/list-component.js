@@ -6,3 +6,12 @@ export function makeListTemplate(queen) {
     template.innerHTML = html;
     return template.content;
 }
+
+const queenList = document.getElementById('queen-list');
+
+export default function loadList(queens) {
+    queens.forEach(queen => {
+        const dom = makeListTemplate(queen);
+        queenList.appendChild(dom);
+    });
+}

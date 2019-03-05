@@ -18,7 +18,8 @@ export function createDetail(movie) {
     const dom = template.content;
     return dom;
 }
-
+const detailContainer = document.getElementById('detail-container');
 export default function loadDetail(detailList) {
-    
+    const dom = createDetail(detailList);
+    detailContainer.appendChild(dom);
 }

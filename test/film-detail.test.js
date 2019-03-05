@@ -11,7 +11,7 @@ test('test table maker', assert => {
     <dt>Producer:</dt>
     <dd>Adam</dd>
     <dt>Description:</dt>
-    <dd>hello dd=\"\"</dd></dl>
+    <dd>hello</dd>  </dl>
     `;
    
     const movieObject = {

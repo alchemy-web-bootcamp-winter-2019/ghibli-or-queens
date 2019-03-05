@@ -12,7 +12,7 @@ test('test make-list-component.test.js', assert => {
         'id': '1'
     };
     const expected = `
-    <li><a href="film-detail.html?id=1>film1</a> </li>
+    <li> <a href="film-detail.html?id=1">film1</a> </li>
     `;
     //act/
     const actual = makeListItem(filmObject);

@@ -1,0 +1,66 @@
+body {
+    background: url(./assets/ghibli.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header {
+    color: white;
+    margin: 0 30% 0 30%;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#film-list {
+    list-style: none;
+    margin: 5% 20% 0 20%;
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#film-list:hover {
+    opacity: 1;
+}
+
+li {
+    margin-top: 5px;
+}
+
+#film-detail {
+    margin: 5% 20% 0 20%;
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+    opacity: 0.8;
+}
+
+#film-detail:hover {
+    opacity: 1;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 1 1;
+}
+
+dt {
+    grid-column-start: 1;
+}
+
+dd {
+    grid-column-start: 2;
+}
+
+dt, dd {
+    padding: 2px;
+}

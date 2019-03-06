@@ -1,7 +1,12 @@
 import { loadHeader } from './header.js';
 import { loadFilms } from './film-list.js';
-import { loadFilmDetails } from './film-detail.js';
 
 loadHeader();
-loadFilmDetails();
-loadFilms();
+
+const url = 'https://ghibliapi.herokuapp.com/films';
+
+fetch(url)
+    .then(response => response.json())
+    .then(results => {
+        loadFilms(results);
+    });

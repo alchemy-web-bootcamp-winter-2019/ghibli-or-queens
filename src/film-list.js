@@ -9,17 +9,9 @@ export default function filmListTemplate(film) {
 
 const filmList = document.getElementById('film-list');
 
-const URL = 'https://ghibliapi.herokuapp.com/films';
-
 export function loadFilms(films) {
     films.forEach(film => {
         const dom = filmListTemplate(film);
         filmList.appendChild(dom);
     });
 } 
-
-fetch(URL)
-    .then(response => response.json())
-    .then(results => {
-        loadFilms(results);
-    });

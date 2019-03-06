@@ -1,17 +1,17 @@
-export function makeQueenDetail(queen) {
+export function makeFilmDetail(film) {
     const html = /*html*/
     `
     <dl>
-    <dt>Name:</dt>
-    <dd>${queen.name}</dd>
-    <dt>Winner:</dt>
-    <dd>${queen.winner ? 'Yes' : 'No'}</dd>
-    <dt>Quote:</dt>
-    <dd>${queen.quote}</dd>
-    <dt>First Appearance:</dt>
-    <dd>Season ${queen.seasons[0].seasonNumber}</dd>
-    <dt>Picture</dt>
-    <dd><img src="${queen.image_url}"></dd>
+    <dt>Title:</dt>
+    <dd>${film.title}</dd>
+    <dt>Description:</dt>
+    <dd>${film.description}</dd>
+    <dt>Director:</dt>
+    <dd>${film.director}</dd>
+    <dt>Producer:</dt>
+    <dd>${film.producer}</dd>
+    <dt>Release:</dt>
+    <dd>${film.release_date}</dd>
     </dl>`;
 
     const template = document.createElement('template');
@@ -21,7 +21,7 @@ export function makeQueenDetail(queen) {
 
 const detail = document.getElementById('detail');
 
-export default function loadDetail(queen) {
-    const dom = makeQueenDetail(queen);
+export default function loadDetail(film) {
+    const dom = makeFilmDetail(film);
     detail.appendChild(dom);
 }

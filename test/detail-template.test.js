@@ -1,27 +1,32 @@
-import { makeQueenDetail } from '../src/detail-component.js';
+import { makeFilmDetail } from '../src/detail-component.js';
 const test = QUnit.test;
 
 test('make detail page html', assert => {
     //arrange
-    const queen = {
-        'id': 1, 'name': 'Victoria \'Porkchop\' Parker', 'winner': false, 'missCongeniality': false, 'image_url':'http://www.nokeynoshade.party/images/victoria-porkchop-parker.jpg', 'quote':'Would you fuck me? I\'d fuck me.', 'seasons':[{ 'seasonNumber':'1', 'id': 1, 'place': 9 }]
+    const film = {
+        'id': '2baf70d1-42bb-4437-b551-e5fed5a87abe',
+        'title': 'Castle in the Sky',
+        'description': 'The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa\'s science to make himself ruler of the world.',
+        'director': 'Hayao Miyazaki',
+        'producer': 'Isao Takahata',
+        'release_date': '1986',
+        'rt_score': '95'
     };
     const expected = /*html*/
-    `
-    <dl>
-    <dt>Name:</dt>
-    <dd>Victoria 'Porkchop' Parker</dd>
-    <dt>Winner:</dt>
-    <dd>No</dd>
-    <dt>Quote:</dt>
-    <dd>Would you fuck me? I'd fuck me.</dd>
-    <dt>First Appearance:</dt>
-    <dd>Season 1</dd>
-    <dt>Picture</dt>
-    <dd><img src="http://www.nokeynoshade.party/images/victoria-porkchop-parker.jpg"></dd>
+    `<dl>
+    <dt>Title:</dt>
+    <dd>Castle in the Sky</dd>
+    <dt>Description:</dt>
+    <dd>The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.</dd>
+    <dt>Director:</dt>
+    <dd>Hayao Miyazaki</dd>
+    <dt>Producer:</dt>
+    <dd>Isao Takahata</dd>
+    <dt>Release:</dt>
+    <dd>1986</dd>
     </dl>`;
     //act
-    const queenDetail = makeQueenDetail(queen);
+    const filmDetail = makeFilmDetail(film);
     //assert
-    assert.htmlEqual(queenDetail, expected);
+    assert.htmlEqual(filmDetail, expected);
 });

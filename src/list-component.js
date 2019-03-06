@@ -1,17 +1,17 @@
-export function makeListTemplate(queen) {
+export function makeListTemplate(film) {
     const html = /*html*/
-    `<li><a href="queen-detail.html?id=${queen.id}">${queen.name}</a><img src="${queen.image_url}"></li>`;
+    `<li><a href="film-detail.html?id=${film.id}">${film.title}</a>${film.rt_score}</li>`;
 
     const template = document.createElement('template');
     template.innerHTML = html;
     return template.content;
 }
 
-const queenList = document.getElementById('queen-list');
+const filmList = document.getElementById('film-list');
 
-export default function loadList(queens) {
-    queens.forEach(queen => {
-        const dom = makeListTemplate(queen);
-        queenList.appendChild(dom);
+export default function loadList(films) {
+    films.forEach(film => {
+        const dom = makeListTemplate(film);
+        filmList.appendChild(dom);
     });
 }

@@ -3,9 +3,10 @@ header {
     color: aqua;
     display: flex;
     flex-direction: row;
-    align-content: space-between;
+
 }
- #all-queens {
-     align-self: flex-end;
+ #all-films {
+    align-self: center;
+    margin-left: 40px
  }
 

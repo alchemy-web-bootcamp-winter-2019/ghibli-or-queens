@@ -1,6 +1,6 @@
 import loadDetail from './detail-component.js';
 
-const URL = 'http://www.nokeynoshade.party/api/queens/';
+const URL = 'https://ghibliapi.herokuapp.com/films/';
 
 const searchParams = new URLSearchParams(window.location.search);
 
@@ -12,8 +12,8 @@ if(!id) {
 
 fetch(URL + id)
     .then(response => response.json())
-    .then(queen => {
-        loadDetail(queen);
+    .then(film => {
+        loadDetail(film);
     })
     .catch(err => {
         console.error('fetch error', err);

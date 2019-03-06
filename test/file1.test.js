@@ -12,8 +12,7 @@ const filmName = {
 
 test('make a dynamic html list', function(assert) {
     //arrange
-    const json = { 'title': 'Castle in the Sky' };
-
+    
       //act
     const result = makeFilmList(filmName);
     const expected = /*HTML*/` <li id="film"><a href="./description-page.html?id=2baf70d1-42bb-4437-b551-e5fed5a87abe">Castle in the Sky</a></li>`;

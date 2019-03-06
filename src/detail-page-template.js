@@ -16,8 +16,7 @@ export function detailPageTemplate(filmObject) {
 }
 
 export default function buildFilmDetails(filmObject) {
-    const filmInfoNode = document.getElementById('film-info');
-    console.log(filmInfoNode); 
+    const filmInfoNode = document.getElementById('film-info'); 
     const dom = detailPageTemplate(filmObject);
     filmInfoNode.appendChild(dom);
 }

@@ -6,7 +6,7 @@ QUnit.module('make html template literal');
 import { makeFilmList } from '../src/make-film-list.js';
 
 const filmName = {
-    "name": "Castle in the Sky",
+    "title": "Castle in the Sky",
     "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe"
 };
 

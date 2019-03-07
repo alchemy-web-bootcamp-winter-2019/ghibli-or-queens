@@ -1,0 +1,40 @@
+body {
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #eb5db7;
+}
+
+a:visited {
+    color: #eb5db7;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    flex-grow: 1;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+dt {
+    display: flex;
+    background-color: #eb5db7;
+    color: white;
+}
+
+dd {
+    background-color: black;
+    color: #eb5db7;
+}

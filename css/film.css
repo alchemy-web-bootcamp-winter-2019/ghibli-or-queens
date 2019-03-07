@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #FDE74C;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #DB5461;
+}
+
+body {
+    background-image: url('../assets/studio-ghibli-museum-tokyo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th {
+    background-color: #FDE74C;
+    vertical-align: top;
+    text-align: right;
+    padding: 5px;
+    width: 100px;
+}
+
+td {
+    background-color: #E3655B;
+    padding: 5px;
+}

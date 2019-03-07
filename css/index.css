@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #FDE74C;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #DB5461;
+}
+
+
+body {
+    background-image: url('../assets/studio-ghibli-museum-tokyo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    margin-left: 20px;
+}
+
+main {
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+#film-list-container {
+    margin-left: 20px;
+}
+
+ul {
+    background-color: #4C5B5C;
+}
+
+li {
+    margin: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+li span {
+    color: #FDE74C;
+}
+
+li a {
+    width: 240px;
+    text-align: right;
+    margin-right: 8px;
+}
+
+
+

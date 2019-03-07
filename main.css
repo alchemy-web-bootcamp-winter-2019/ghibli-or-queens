@@ -1,0 +1,12 @@
+header {
+    background: lightcoral;
+    color: aqua;
+    display: flex;
+    flex-direction: row;
+
+}
+ #all-films {
+    align-self: center;
+    margin-left: 40px
+ }
+

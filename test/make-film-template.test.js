@@ -1,4 +1,4 @@
-import { makeFilmTemplate } from '../src/make-film-template.js';
+import { makeFilmTemplate } from '../src/film-detail-component.js';
 const test = QUnit.test;
 
 QUnit.module('Making tests for the film template');
@@ -20,7 +20,7 @@ test('make film list template', assert => {
     //Act
     const result = makeFilmTemplate(film);
     const expected = /*html*/ `
-    <dl id="film-detail">
+    <dl>
         <dt>Title:</dt>
         <dd>Castle in the Sky</dd>
         <dt>Released:</dt>

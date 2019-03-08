@@ -8,5 +8,6 @@ fetch(URL)
         loadFilms(films);
     })
     .catch(err => {
+        /* eslint-disable-next-line */
         console.error('fetch error', err);
     });

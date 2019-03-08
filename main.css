@@ -1,0 +1,59 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+dl {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: visible;
+}
+
+dt {
+    flex: 0 0 20%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background: rgb(95, 7, 7);
+    color: white;
+    text-align: right;
+    padding: 3px;
+}
+
+dd {
+    flex: 0 0 75%;
+    margin-left: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#all-films-link {
+    border: 1px solid black;    
+    padding: 4px;
+    border-radius: 10px; 
+}
+
+#all-films-link:hover {
+    background-color: lightsteelblue;
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between
+}
+
+h1 {
+    margin:0;
+    flex-grow: 1;
+    margin-left: .5em;
+}
+#logo {
+    height: 75px;
+}

@@ -15,17 +15,17 @@ function makeFilmTemplate(film) {
     const html = /*html*/ `
     <dl id="film-detail">
         <dt>Title:</dt>
-        <dd>Castle in the Sky</dd>
+        <dd>${film.title}</dd>
         <dt>Released:</dt>
-        <dd>1986</dd>
+        <dd>${film.released}</dd>
         <dt>Description:</dt>
-        <dd>Lorem ipsum blah Lorem ipsum blahLorem ipsum blahLorem ipsum blahLorem ipsum blahLorem ipsum blahLorem ipsum blahLorem ipsum blah</dd>
+        <dd>${film.description}</dd>
         <dt>Director:</dt>
-        <dd>Hayao Miyazaki</dd>
+        <dd>${film.director}</dd>
         <dt>Producer:</dt>
-        <dd>Isao Takahata</dd>
+        <dd>${film.producer}</dd>
         <dt>RT Score:</dt>
-        <dd>95</dd>
+        <dd>${film.rt_score}</dd>
     </dl>
     `; 
     const template = document.createElement('template');

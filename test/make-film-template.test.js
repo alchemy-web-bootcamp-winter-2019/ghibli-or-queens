@@ -5,7 +5,7 @@ QUnit.module('Making tests for the film template');
 
 const film = {
     title: 'Castle in the Sky',
-    released: 1986,
+    release_date: 1986,
     description: 'Lorem ipsum blah Lorem ipsum blahLorem ipsum blahLorem ipsum blahLorem ipsum blahLorem ipsum blahLorem ipsum blahLorem ipsum blah',
     director: 'Hayao Miyazaki',
     producer: 'Isao Takahata',

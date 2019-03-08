@@ -4,7 +4,7 @@ export function makeFilmTemplate(film) {
         <dt>Title:</dt>
         <dd>${film.title}</dd>
         <dt>Released:</dt>
-        <dd>${film.released}</dd>
+        <dd>${film.release_date}</dd>
         <dt>Description:</dt>
         <dd>${film.description}</dd>
         <dt>Director:</dt>

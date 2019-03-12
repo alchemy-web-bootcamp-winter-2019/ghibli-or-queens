@@ -1,4 +1,4 @@
-import { makeDetailsTemplate } from '../src/details-component';
+import { makeDetailsTemplate } from '../src/details-component.js';
 
 const test = QUnit.test;
 

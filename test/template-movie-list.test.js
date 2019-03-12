@@ -8,13 +8,13 @@ test('movie list template test', assert => {
     
     const movie = {
         title: 'Castle in the Sky',
-        url: 'https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe',
+        id: '2baf70d1-42bb-4437-b551-e5fed5a87abe',
         release_date: 1986
     };
 
     const expected = `
     <li>
-        <a href="https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe">Castle in the Sky (1986)</a>
+        <a href="movie-details.html?id=2baf70d1-42bb-4437-b551-e5fed5a87abe">Castle in the Sky (1986)</a>
     </li>
     `;
     const result = makeMovieListTemplate(movie);
@@ -25,13 +25,13 @@ test('different title and link for dynamics', assert => {
     
     const movie = {
         title: 'Grave of the Fireflies',
-        url: 'https:/https://ghibliapi.herokuapp.com/films/12cfb892-aac0-4c5b-94af-521852e46d6a',
+        id: '12cfb892-aac0-4c5b-94af-521852e46d6a',
         release_date: 1988
     };
     
     const expected = `
     <li>
-        <a href="https:/https://ghibliapi.herokuapp.com/films/12cfb892-aac0-4c5b-94af-521852e46d6a">Grave of the Fireflies (1988)</a>
+        <a href="movie-details.html?id=12cfb892-aac0-4c5b-94af-521852e46d6a">Grave of the Fireflies (1988)</a>
     </li>
     `;
     const result = makeMovieListTemplate(movie);
